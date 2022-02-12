@@ -15,23 +15,51 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <picture>
-      <source srcset="
-              media="(min-width: 640px)"/>
-  
-      <source srcset=""
-              media="(min-width: 480px)"/>
-  
-      <source srcset=""
-              media="min-width: 320px)" />
-  
-      <source srcset=""
-              media="(max-width: 319px)" />
-  
-      <img class="orig-img"
-           src="img/art/square/lego_square_960.png"
-           alt="Life size person built from grey Lego bricks standing
-                next to partially completed lego people">
+    <picture> 
+
+      <!-- under 320vp landscape below -->
+        <source srcset="images/museum-lanscape-320.jpg, 
+                        images/museum-landscape-340.jpg 2x,
+                        images/museum-landscape-960.jpg 3x"
+              media="(max-width: 320px)"/> 
+
+      <!-- under 480vp landscape below -->
+        <source srcset="images/museum-lanscape-480.jpg, 
+                        images/museum-landscape-960.jpg 2x,
+                        images/museum-landscape-1440.jpg 3x"
+              media="(max-width: 480px)"/> 
+
+      <!-- under 720vp landscape below -->
+        <source srcset="images/museum-lanscape-720.jpg, 
+                        images/museum-landscape-1140.jpg 2x,
+                        images/museum-landscape-2160.jpg 3x"
+              media="(max-width: 720px)"/> 
+
+        <!-- under 960vp landscape below -->
+        <source srcset="images/museum-landscape-960.jpg, 
+                        images/museum-landscape-1920.jpg 2x,
+                        images/museum-landscape-2880.jpg 3x"
+              media="(max-width: 960px)"/> 
+
+        <!-- under 960vp square below -->
+          <source srcset="images/museum-square-480.jpg, 
+                        images/museum-square-960.jpg 2x,
+                        images/museum-square-1440.jpg 3x"
+              media="(min-width: 960px)"/>
+
+        <!-- under 1280vp square below -->
+          <source srcset="images/museum-square-640.jpg, 
+                        images/museum-square-1280.jpg 2x,
+                        images/museum-square-1920.jpg 3x"
+               media="(min-width: 1280px)"/> 
+
+        <!-- under 1600vp square below -->
+          <source srcset="images/museum-square-800.jpg, 
+                          images/museum-square-1600.jpg 2x,
+                          images/museum-square-2400.jpg 3x"
+              media="(min-width: 1600px)"/> 
+            
+      <img src="images/museum-landscape-2880.jpg" alt="museum art">
   </picture>
 
   </header>
